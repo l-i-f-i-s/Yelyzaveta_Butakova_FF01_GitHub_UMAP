@@ -2,15 +2,22 @@
 
 .. за допомогою директиви 'image' вставимо зображення
 .. image:: doc/logo_large.png
-  :width: 600 .. ширина зображення
-  :alt: UMAP logo .. альтернативний текст 
-  :align: center .. вирівнювання по центру
+  :width: 600 
+  .. ширина зображення
+  :alt: UMAP logo 
+  .. альтернативний текст 
+  :align: center 
+  .. вирівнювання по центру
 
 .. розмітка для встановлення іконок у документацію
-|pypi_version|_ |pypi_downloads|_ .. версія пакету PyPl _ кількість завантажень
-|conda_version|_ |conda_downloads|_ .. версія пакету Conda _ кількість завантажень
-|License|_ |build_status|_ |Coverage|_ .. тип ліцензії _ статус збірки _ покриття коду тестами
-|Docs|_ |joss_paper|_ .. посилання на документацію _ посилання на статтю в JOSS
+|pypi_version|_ |pypi_downloads|_ 
+.. версія пакету PyPl _ кількість завантажень
+|conda_version|_ |conda_downloads|_ 
+.. версія пакету Conda _ кількість завантажень
+|License|_ |build_status|_ |Coverage|_ 
+.. тип ліцензії _ статус збірки _ покриття коду тестами
+|Docs|_ |joss_paper|_ 
+.. посилання на документацію _ посилання на статтю в JOSS
 
 .. використаємо розмітку для вставки значка 
 .. |pypi_version| image:: https://img.shields.io/pypi/v/umap-learn.svg
