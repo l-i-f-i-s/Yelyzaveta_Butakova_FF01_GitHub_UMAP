@@ -1,18 +1,18 @@
 .. -*- mode: rst -*-
 
+# за допомогою директиви 'image' вставимо зображення
 .. image:: doc/logo_large.png
-  :width: 600
-  :alt: UMAP logo
-  :align: center
+  :width: 600 # ширина зображення
+  :alt: UMAP logo # альтернативний текст 
+  :align: center # вирівнювання по центру
 
-|pypi_version|_ |pypi_downloads|_
+# розмітка для встановлення іконок у документацію
+|pypi_version|_ |pypi_downloads|_ # версія пакету PyPl _ кількість завантажень
+|conda_version|_ |conda_downloads|_ # версія пакету Conda _ кількість завантажень
+|License|_ |build_status|_ |Coverage|_ # тип ліцензії _ статус збірки _ покриття коду тестами
+|Docs|_ |joss_paper|_ # посилання на документацію _ посилання на статтю в JOSS
 
-|conda_version|_ |conda_downloads|_
-
-|License|_ |build_status|_ |Coverage|_
-
-|Docs|_ |joss_paper|_
-
+# використаємо розмітку для вставки значка 
 .. |pypi_version| image:: https://img.shields.io/pypi/v/umap-learn.svg
 .. _pypi_version: https://pypi.python.org/pypi/umap-learn/
 
@@ -40,6 +40,7 @@
 .. |joss_paper| image:: http://joss.theoj.org/papers/10.21105/joss.00861/status.svg
 .. _joss_paper: https://doi.org/10.21105/joss.00861
 
+# створимо заголовок
 ====
 UMAP
 ====
@@ -70,6 +71,7 @@ in replacement for scikit-learn's t-SNE.
 
 Documentation is `available via Read the Docs <https://umap-learn.readthedocs.io/>`_.
 
+# вставимо жирний текст
 **New: this package now also provides support for densMAP.** The densMAP algorithm augments UMAP
 to preserve local density information in addition to the topological structure of the data.
 Details of this method are described in the following `paper <https://doi.org/10.1038/s41587-020-00801-7>`_:
@@ -81,6 +83,7 @@ through Density-Preserving Data Visualization*, Nature Biotechnology, 2021
 Installing
 ----------
 
+# `` - утворення блоку тексту ("inline code block")
 UMAP depends upon ``scikit-learn``, and thus ``scikit-learn``'s dependencies
 such as ``numpy`` and ``scipy``. UMAP adds a requirement for ``numba`` for
 performance reasons. The original version used Cython, but the improved code
@@ -88,6 +91,7 @@ clarity, simplicity and performance of Numba made the transition necessary.
 
 Requirements:
 
+# * - маркований список
 * Python 3.6 or greater
 * numpy
 * scipy
@@ -109,7 +113,7 @@ Recommended packages:
 
 Conda install, via the excellent work of the conda-forge team:
 
-.. code:: bash
+.. code:: bash # вставка блоку коду
 
     conda install -c conda-forge umap-learn
 
@@ -196,6 +200,8 @@ next to other sklearn transformers with an identical calling API.
 
 There are a number of parameters that can be set for the UMAP class; the
 major ones are as follows:
+
+# створимо список 
 
  -  ``n_neighbors``: This determines the number of neighboring points used in
     local approximations of manifold structure. Larger values will result in
@@ -298,6 +304,7 @@ The obligatory MNIST digits dataset, embedded in 42
 seconds (with pynndescent installed and after numba jit warmup)
 using a 3.1 GHz Intel Core i7 processor (n_neighbors=10, min_dist=0.001):
 
+# вставка зображення з альтернативним текстом
 .. image:: images/umap_example_mnist1.png
     :alt: UMAP embedding of MNIST digits
 
